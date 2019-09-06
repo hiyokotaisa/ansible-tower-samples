@@ -1,9 +1,7 @@
 - name: Hello World Sample
   hosts: all
-  vars:
-    hoge-with-dash: "hoge"
   tasks:
     - name: Hello Message
       debug:
-        msg: "{{ hoge-with-dash }}"
+        msg: "Hello"
 
