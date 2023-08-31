@@ -1,5 +1,0 @@
----
-collections:
-  - name: https://github.com/hiyokotaisa/test_collection.git
-    type: git
-    version: main
