@@ -1,0 +1,16 @@
+---
+- name: Test
+  hosts: localhost
+
+  sources:
+    - ansible.eda.webhook:
+        host: 0.0.0.0
+        port: 5000
+
+  rules:
+    - name: test
+      condition: event.payload.message == "test"
+      action:
+        run_job_template:
+          name: Demo Job Template
+          organization: Default
